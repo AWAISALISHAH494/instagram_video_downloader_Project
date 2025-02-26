@@ -1,0 +1,150 @@
+INFO 2025-02-21 20:03:41,298 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:03:53,385 log Not Found: /assets/style.css
+INFO 2025-02-21 20:04:26,956 views Processing download for URL: https://www.instagram.com/reel/DENxaEiqrj9/?utm_source=ig_web_copy_link (Shortcode: DENxaEiqrj9)
+WARNING 2025-02-21 20:04:43,294 log Not Found: /download/
+INFO 2025-02-21 20:05:45,435 views Processing download for URL: https://www.instagram.com/reel/DENxaEiqrj9/?utm_source=ig_web_copy_link (Shortcode: DENxaEiqrj9)
+WARNING 2025-02-21 20:05:48,785 log Not Found: /download/
+WARNING 2025-02-21 20:09:04,078 log Method Not Allowed: /download/
+WARNING 2025-02-21 20:09:04,412 log Not Found: /favicon.ico
+WARNING 2025-02-21 20:10:39,148 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:10:49,290 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:10:51,054 log Not Found: /favicon.ico
+INFO 2025-02-21 20:10:52,773 views Processing download for URL: https://www.instagram.com/reel/DENxaEiqrj9/?utm_source=ig_web_copy_link (Shortcode: DENxaEiqrj9)
+WARNING 2025-02-21 20:10:54,241 log Not Found: /download/
+WARNING 2025-02-21 20:11:27,207 log Not Found: /assets/style.css
+INFO 2025-02-21 20:11:33,953 views Processing download for URL: https://www.instagram.com/reel/DENxaEiqrj9/?utm_source=ig_web_copy_link (Shortcode: DENxaEiqrj9)
+WARNING 2025-02-21 20:11:34,708 log Not Found: /download/
+INFO 2025-02-21 20:12:33,052 views Processing download for URL: https://www.instagram.com/reel/DD421YMoSuO/?utm_source=ig_web_copy_link (Shortcode: DD421YMoSuO)
+WARNING 2025-02-21 20:12:43,477 log Not Found: /download/
+INFO 2025-02-21 20:14:02,558 views Processing download for URL: https://www.instagram.com/reel/DD421YMoSuO/?utm_source=ig_web_copy_link (Shortcode: DD421YMoSuO)
+WARNING 2025-02-21 20:14:03,847 log Not Found: /download/
+INFO 2025-02-21 20:15:57,686 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:15:59,545 log Method Not Allowed: /download/
+INFO 2025-02-21 20:18:04,026 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-21 20:18:05,363 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:18:07,223 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-21 20:18:08,535 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:18:25,880 log Method Not Allowed: /download/
+WARNING 2025-02-21 20:18:27,908 log Method Not Allowed: /download/
+WARNING 2025-02-21 20:18:32,147 log Not Found: /assets/style.css
+INFO 2025-02-21 20:18:43,045 views Processing download for URL: https://www.instagram.com/reel/DFjwBiSI0qs/?utm_source=ig_web_copy_link (Shortcode: DFjwBiSI0qs)
+WARNING 2025-02-21 20:18:57,369 log Not Found: /download/
+WARNING 2025-02-21 20:22:30,996 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:22:59,449 log Not Found: /assets/style.css
+INFO 2025-02-21 20:23:10,699 views Processing download for URL: https://www.instagram.com/reel/DDGmxNlSJVQ/?utm_source=ig_web_copy_link (Shortcode: DDGmxNlSJVQ)
+WARNING 2025-02-21 20:23:50,038 log Not Found: /download/
+INFO 2025-02-21 20:27:50,255 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-21 20:27:51,407 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:27:54,095 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-21 20:27:55,153 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:28:34,570 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:28:43,024 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:29:03,271 log Not Found: /assets/style.css
+INFO 2025-02-21 20:29:13,776 views Processing download for URL: https://www.instagram.com/reel/DGA8MkGN43i/?utm_source=ig_web_copy_link (Shortcode: DGA8MkGN43i)
+WARNING 2025-02-21 20:29:41,108 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DGA8MkGN43i
+WARNING 2025-02-21 20:29:41,111 log Not Found: /download/
+WARNING 2025-02-21 20:34:22,837 log Not Found: /assets/style.css
+INFO 2025-02-21 20:35:01,821 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-21 20:35:03,289 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:35:15,359 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-21 20:35:16,573 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:35:44,807 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:35:47,844 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:35:48,598 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:35:48,815 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:35:49,814 log Not Found: /assets/style.css
+INFO 2025-02-21 20:36:08,952 views Processing download for URL: https://www.instagram.com/reel/DC0PNKOBw6z/?utm_source=ig_web_copy_link (Shortcode: DC0PNKOBw6z)
+WARNING 2025-02-21 20:36:40,044 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DC0PNKOBw6z
+WARNING 2025-02-21 20:36:40,045 log Not Found: /download/
+INFO 2025-02-21 20:40:08,375 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-21 20:40:09,613 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:43:12,457 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:43:14,710 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:43:16,007 log Not Found: /assets/style.css
+INFO 2025-02-21 20:43:31,620 views Processing download for URL: https://www.instagram.com/reel/DFr9rfUtdIa/?utm_source=ig_web_copy_link (Shortcode: DFr9rfUtdIa)
+WARNING 2025-02-21 20:43:46,358 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DFr9rfUtdIa
+WARNING 2025-02-21 20:43:46,359 log Not Found: /download/
+WARNING 2025-02-21 20:47:05,505 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:47:13,732 log Not Found: /assets/style.css
+WARNING 2025-02-21 20:47:25,288 log Not Found: /assets/style.css
+INFO 2025-02-21 20:49:50,921 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\instasnaps\settings.py changed, reloading.
+INFO 2025-02-21 20:49:52,250 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:50:10,401 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\instasnaps\settings.py changed, reloading.
+INFO 2025-02-21 20:53:50,651 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:54:53,005 log Not Found: /favicon.ico
+INFO 2025-02-21 20:56:22,183 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\instasnaps\settings.py changed, reloading.
+INFO 2025-02-21 20:56:23,472 autoreload Watching for file changes with StatReloader
+INFO 2025-02-21 20:56:27,343 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\instasnaps\settings.py changed, reloading.
+INFO 2025-02-21 20:56:28,689 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-21 20:57:03,630 log Not Found: /favicon.ico
+WARNING 2025-02-21 20:58:36,380 log Bad Request: /download/
+INFO 2025-02-21 20:58:58,103 views Processing download for URL: https://www.instagram.com/reel/DFaSv4iSpQo/?utm_source=ig_web_copy_link (Shortcode: DFaSv4iSpQo)
+WARNING 2025-02-21 20:59:12,259 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DFaSv4iSpQo
+WARNING 2025-02-21 20:59:12,259 log Not Found: /download/
+INFO 2025-02-24 09:22:47,677 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-24 09:26:20,364 log Not Found: /favicon.ico
+INFO 2025-02-24 09:27:26,249 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-24 09:27:29,748 log Not Found: /downloader/assets/style.css
+WARNING 2025-02-24 09:27:57,730 log Not Found: /assets/style.css
+WARNING 2025-02-24 09:28:14,094 log Not Found: /assets/style.css
+WARNING 2025-02-24 09:28:20,069 log Not Found: /favicon.ico
+INFO 2025-02-24 09:35:18,902 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 09:36:01,791 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 09:37:50,615 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\instasnaps\settings.py changed, reloading.
+INFO 2025-02-24 09:37:51,624 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 09:38:37,196 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 09:38:51,803 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 09:42:02,887 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-24 09:42:07,099 log Not Found: /favicon.ico
+INFO 2025-02-24 09:44:52,927 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-24 09:44:58,657 log Not Found: /favicon.ico
+INFO 2025-02-24 15:55:46,920 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 15:56:08,770 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 15:56:35,039 views Processing download for URL: https://www.instagram.com/reel/DGaniu3o0i5/?utm_source=ig_web_copy_link (Shortcode: DGaniu3o0i5)
+WARNING 2025-02-24 15:56:58,658 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DGaniu3o0i5
+WARNING 2025-02-24 15:56:58,659 log Not Found: /download/
+INFO 2025-02-24 15:57:20,604 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 15:57:21,490 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 15:57:26,888 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 15:57:27,966 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 15:57:38,604 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 15:57:39,403 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 15:57:41,180 views Processing download for URL: https://www.instagram.com/reel/DGaniu3o0i5/?utm_source=ig_web_copy_link (Shortcode: DGaniu3o0i5)
+WARNING 2025-02-24 15:57:44,649 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DGaniu3o0i5
+WARNING 2025-02-24 15:57:44,651 log Not Found: /download/
+INFO 2025-02-24 15:58:03,589 views Processing download for URL: https://www.instagram.com/reel/DGbdWksuCJi/?utm_source=ig_web_copy_link (Shortcode: DGbdWksuCJi)
+INFO 2025-02-24 16:04:05,562 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 16:04:06,505 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 16:04:07,933 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 16:04:08,805 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 16:07:39,197 autoreload Watching for file changes with StatReloader
+ERROR 2025-02-24 16:07:58,226 views Invalid JSON in request body
+WARNING 2025-02-24 16:07:58,227 log Bad Request: /download/
+INFO 2025-02-24 16:08:47,270 autoreload Watching for file changes with StatReloader
+ERROR 2025-02-24 16:09:05,871 views Invalid JSON in request body
+WARNING 2025-02-24 16:09:05,873 log Bad Request: /download/
+ERROR 2025-02-24 16:15:12,569 views Invalid JSON in request body
+WARNING 2025-02-24 16:15:12,570 log Bad Request: /download/
+ERROR 2025-02-24 16:16:36,155 views Invalid JSON in request body
+WARNING 2025-02-24 16:16:36,157 log Bad Request: /download/
+INFO 2025-02-24 16:17:33,025 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 16:17:33,967 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 16:18:07,675 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 16:18:30,821 views Processing download for URL: https://www.instagram.com/reel/DC0PNKOBw6z/?utm_source=ig_web_copy_link (Shortcode: DC0PNKOBw6z)
+WARNING 2025-02-24 16:18:32,519 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DC0PNKOBw6z
+WARNING 2025-02-24 16:18:32,519 log Not Found: /download/
+WARNING 2025-02-24 16:23:36,092 log Method Not Allowed: /download/
+WARNING 2025-02-24 16:23:36,460 log Method Not Allowed: /download/
+INFO 2025-02-24 16:24:13,643 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 16:24:14,698 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 16:24:17,365 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 16:24:18,118 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-24 16:24:30,778 log Not Found: /favicon.ico
+INFO 2025-02-24 16:24:46,433 views Received POST data: <QueryDict: {'url': ['https://www.instagram.com/reel/DC0PNKOBw6z/?utm_source=ig_web_copy_link']}>
+INFO 2025-02-24 16:24:46,436 views Processing download for URL: https://www.instagram.com/reel/DC0PNKOBw6z/?utm_source=ig_web_copy_link (Shortcode: DC0PNKOBw6z)
+WARNING 2025-02-24 16:24:52,804 views No files found in C:\Users\ALI\OneDrive\Desktop\instasnap\media\downloads for DC0PNKOBw6z
+WARNING 2025-02-24 16:24:52,804 log Not Found: /download/
+WARNING 2025-02-24 16:27:47,682 log Not Found: /favicon.ico
+INFO 2025-02-24 16:29:28,216 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\downloader\views.py changed, reloading.
+INFO 2025-02-24 16:29:29,194 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 16:30:11,849 autoreload C:\Users\ALI\OneDrive\Desktop\instasnap\instasnaps\settings.py changed, reloading.

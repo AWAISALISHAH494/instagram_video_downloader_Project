@@ -1,0 +1,581 @@
+{% comment %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InstaSnaps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    {% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "InstaSnaps",
+            "alternateName": ["Instagram downloader", "InstaSnaps"],
+            "url": "https://instasnaps.example.com"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Instagram Downloader - Download Instagram Video, Photos, IGTV & Reels",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "xpath": [
+                "/html/head/title",
+                "/html/head/meta[@name='description']/@content",
+                "/html/body/main/section[1]/div/div[2]/h2",
+                "/html/body/main/section[1]/div/div[2]/p",
+                "/html/body/main/section[2]"
+              ]
+            },
+            "inLanguage": "en",
+            "description": "InstaSnaps is a tool to help you download Instagram Videos, Reels, Photos, IGTV & Albums. Easy to use on any device.",
+            "url": "https://instasnaps.example.com"
+          },
+          {
+            "@type": "Organization",
+            "name": "InstaSnaps",
+            "alternateName": "Instagram downloader",
+            "url": "https://instasnaps.example.com",
+            "email": "support@instasnaps.example.com",
+            "logo": "https://instasnaps.example.com/images/logo.png"
+          },
+          {
+            "@type": "WebApplication",
+            "name": "InstaSnaps",
+            "alternateName": ["Instagram downloader", "InstaSnaps"],
+            "url": "https://instasnaps.example.com",
+            "image": "https://instasnaps.example.com/icon-192.png",
+            "operatingSystem": "Windows, Linux, iOS, Android, OSX, macOS",
+            "applicationCategory": "UtilitiesApplication",
+            "featureList": [
+              "Photo downloader",
+              "Video Downloader",
+              "Reel Downloader",
+              "IGTV Downloader",
+              "Gallery Downloader",
+              "Story Downloader",
+              "Highlights Downloader"
+            ],
+            "contentRating": "Everyone",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "15000"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <section class="main">
+      <header class="header">
+        <div class="container">
+          <a href="#" class="logo">InstaSnaps</a>
+          <nav>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">EN</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Instagram Downloader</h1>
+          <h2>Download Instagram Videos, Photos, Reels, IGTV & carousel</h2>
+
+          <form id="download-form" action="/download/" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="url" id="hidden-url">
+            <button type="button" class="paste">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                <path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path>
+              </svg>
+              Paste
+            </button>
+            <input type="search" id="instagram-url" placeholder="Paste Instagram video/reel link here." required>
+            <button type="submit" class="download">
+              <svg viewBox="0 0 256 256">
+                <path d="M228,144v64a12,12,0,0,1-12,12H40a12,12,0,0,1-12-12V144a12,12,0,0,1,24,0v52H204V144a12,12,0,0,1,24,0Zm-108.49,8.49a12,12,0,0,0,17,0l40-40a12,12,0,0,0-17-17L140,115V32a12,12,0,0,0-24,0v83L96.49,95.51a12,12,0,0,0-17,17Z"></path>
+              </svg>
+              Download
+            </button>
+          </form> 
+          
+          <div id="download-status" style="margin-top: 10px; color: #333;"></div>
+          <!-- Added hidden iframe right after the form -->
+          <iframe name="hidden-iframe" style="display:none;"></iframe>
+          <!-- Rest of your nav content -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="how-to-download">
+          <h2>How to download from Instagram?</h2>
+          <p>
+            This FAQ provides information on frequent questions or concerns
+            about the InstaSnaps downloader. If you can't find the answer to
+            your question, feel free to ask through email on our contact page.
+          </p>
+          <ul>
+            <li>
+              <img
+                src="https://fastdl.app/images/instruction/copy.webp"
+                alt="Copy URL"
+              />
+              <h3>Copy the URL</h3>
+              <p>
+                Open the Instagram application or website, copy the URL of the
+                photo, video, reels, carousel, or IGTV.
+              </p>
+            </li>
+            <li>
+              <img
+                src="https://fastdl.app/images/instruction/paste.webp"
+                alt="Paste URL"
+              />
+              <h3>Paste the URL</h3>
+              <p>
+                Paste the copied URL into the input field above and click
+                "Download".
+              </p>
+            </li>
+            <li>
+              <img
+                src="https://fastdl.app/images/instruction/download.webp"
+                alt="Download"
+              />
+              <h3>Download</h3>
+              <p>
+                Wait for InstaSnaps to process the link and download your
+                content!
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card horizontal">
+          <img
+            class="media"
+            src="https://fastdl.app/images/text/card_index.webp"
+            alt="Feature Image"
+          />
+          <div class="card-body">
+            <h3>Instagram Videos and Photos Download</h3>
+            <p>
+              InstaSnaps is an online web tool that helps you download Instagram
+              Videos, Photos, Reels, and IGTV. It’s designed to be easy to use
+              on any device, such as a mobile phone, tablet, or computer.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="heading-style">InstaSnaps Features</h2>
+        <p class="text-center">
+          With InstaSnaps, you can download any type of content from Instagram.
+          Our service includes video, reels, IGTV, photo, and carousel
+          downloads.
+        </p>
+
+        <div class="card horizontal">
+          <div class="card-body">
+            <h3>Video Downloader</h3>
+            <p>
+              Download Instagram videos quickly and easily with a single click.
+            </p>
+          </div>
+          <img
+            class="media"
+            src="https://fastdl.app/images/text/card_index.webp"
+            alt="Video Feature"
+          />
+        </div>
+        <div class="card horizontal">
+          <img
+            class="media"
+            src="https://fastdl.app/images/text/card_index.webp"
+            alt="Reels Feature"
+          />
+          <div class="card-body">
+            <h3>Reels Downloader</h3>
+            <p>Save Instagram Reels for offline viewing anytime.</p>
+          </div>
+        </div>
+        <div class="card horizontal">
+          <div class="card-body">
+            <h3>Photo Downloader</h3>
+            <p>Download high-quality Instagram photos effortlessly.</p>
+          </div>
+          <img
+            class="media"
+            src="https://fastdl.app/images/text/card_index.webp"
+            alt="Photo Feature"
+          />
+        </div>
+        <div class="card horizontal">
+          <img
+            class="media"
+            src="https://fastdl.app/images/text/card_index.webp"
+            alt="IGTV Feature"
+          />
+          <div class="card-body">
+            <h3>IGTV Downloader</h3>
+            <p>Grab long-form IGTV videos with ease.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <h2 class="heading-style">Frequently Asked Questions (FAQ)</h2>
+          <p class="text-center">
+            This FAQ provides information on frequent questions or concerns
+            about the InstaSnaps downloader. If you can't find the answer to
+            your question, feel free to ask through email on our contact page.
+          </p>
+
+          <h3 class="heading-style2">What is an Instagram Video Downloader?</h3>
+          <p>
+            It’s an online tool that lets you download Instagram videos, reels,
+            photos, IGTV, and carousels. InstaSnaps is the best tool for
+            downloading from Instagram.
+          </p>
+
+          <h3 class="heading-style2">Is InstaSnaps free to use?</h3>
+          <p>Yes, InstaSnaps is completely free with no hidden costs.</p>
+
+          <h3 class="heading-style2">Can I download private posts?</h3>
+          <p>
+            No, InstaSnaps only works with public Instagram posts due to privacy
+            restrictions.
+          </p>
+
+          <h3 class="heading-style2">What devices are supported?</h3>
+          <p>
+            InstaSnaps works on all devices, including mobile phones, tablets,
+            and computers.
+          </p>
+        </div>
+      </div>
+
+      <footer class="footer"></footer>
+    </section>
+
+    <!-- Inline JavaScript for Download Functionality -->
+
+   
+    <script>
+      document.getElementById('download-form').addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const url = document.getElementById('instagram-url').value.trim();
+          if (!url) {
+              alert('Please enter an Instagram URL');
+              return;
+          }
+      
+          try {
+              const response = await fetch('/download/', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                  body: new URLSearchParams({ 'url': url })
+              });
+      
+              const data = await response.json();
+              if (!response.ok) {
+                  alert(data.error);
+                  return;
+              }
+      
+              // Create a temporary link with the correct URL and filename.
+              const downloadLink = document.createElement('a');
+              downloadLink.href = data.download_url;
+              downloadLink.setAttribute('download', data.filename);
+              downloadLink.style.display = 'none';
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+              document.body.removeChild(downloadLink);
+      
+              alert("Download started! Check your browser's Downloads folder.");
+          } catch (error) {
+              console.error("Download failed:", error);
+              alert("An error occurred while downloading.");
+          }
+      });
+      
+      // Clipboard paste functionality
+      document.querySelector('.paste').addEventListener('click', async () => {
+          try {
+              const text = await navigator.clipboard.readText();
+              document.getElementById('instagram-url').value = text;
+          } catch (err) {
+              alert('Failed to paste from clipboard');
+          }
+      });
+    </script>
+     {
+  </body>
+</html> {% endcomment %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InstaSnaps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+      /* Simple spinner animation and overlay styling */
+      #download-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9999;
+        color: #fff;
+        text-align: center;
+      }
+      #download-overlay .content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .spinner {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+        margin: 0 auto;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <header class="header">
+        <div class="container">
+          <a href="#" class="logo">InstaSnaps</a>
+          <nav>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">EN</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Instagram Downloader</h1>
+          <h2>Download Instagram Videos, Photos, Reels, IGTV & carousel</h2>
+
+          <!-- 
+            The form submits to /download/ via POST.
+            The target is a hidden iframe so the main page is not replaced.
+          -->
+          <form id="download-form" action="/download/" method="post" target="downloadFrame">
+            {% csrf_token %}
+            <input type="search" id="instagram-url" name="url" placeholder="Paste Instagram video/reel link here." required>
+            <button type="submit" class="download">
+              <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <path d="M228,144v64a12,12,0,0,1-12,12H40a12,12,0,0,1-12-12V144a12,12,0,0,1,24,0v52H204V144a12,12,0,0,1,24,0Zm-108.49,8.49a12,12,0,0,0,17,0l40-40a12,12,0,0,0-17-17L140,115V32a12,12,0,0,0-24,0v83L96.49,95.51a12,12,0,0,0-17,17Z"/>
+              </svg>
+              Download
+            </button>
+            <button type="button" class="paste">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                <path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/>
+              </svg>
+              Paste
+            </button>
+          </form>
+          <!-- Hidden iframe to handle the file download without leaving the main page -->
+          <iframe name="downloadFrame" style="display:none;"></iframe>
+
+          <!-- Download overlay with spinner and message -->
+          <div id="download-overlay">
+            <div class="content">
+              <div class="spinner"></div>
+              <p id="download-message">Downloading...</p>
+            </div>
+          </div>
+
+          <div id="download-status" style="margin-top: 10px; color: #333;"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="how-to-download">
+          <h2>How to download from Instagram?</h2>
+          <p>
+            This FAQ provides information on frequent questions or concerns about the InstaSnaps downloader.
+            If you can't find the answer to your question, feel free to ask through email on our contact page.
+          </p>
+          <ul>
+            <li>
+              <img src="https://fastdl.app/images/instruction/copy.webp" alt="Copy URL" />
+              <h3>Copy the URL</h3>
+              <p>
+                Open the Instagram application or website, copy the URL of the photo, video, reels, carousel, or IGTV.
+              </p>
+            </li>
+            <li>
+              <img src="https://fastdl.app/images/instruction/paste.webp" alt="Paste URL" />
+              <h3>Paste the URL</h3>
+              <p>
+                Paste the copied URL into the input field above and click "Download".
+              </p>
+            </li>
+            <li>
+              <img src="https://fastdl.app/images/instruction/download.webp" alt="Download" />
+              <h3>Download</h3>
+              <p>
+                Wait for InstaSnaps to process the link and download your content!
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Additional content such as features and FAQs -->
+        <div class="card horizontal">
+          <img class="media" src="https://fastdl.app/images/text/card_index.webp" alt="Feature Image" />
+          <div class="card-body">
+            <h3>Instagram Videos and Photos Download</h3>
+            <p>
+              InstaSnaps is an online web tool that helps you download Instagram Videos, Photos, Reels, and IGTV.
+              It’s designed to be easy to use on any device.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="heading-style">InstaSnaps Features</h2>
+        <p class="text-center">
+          With InstaSnaps, you can download any type of content from Instagram.
+          Our service includes video, reels, IGTV, photo, and carousel downloads.
+        </p>
+
+        <div class="card horizontal">
+          <div class="card-body">
+            <h3>Video Downloader</h3>
+            <p>
+              Download Instagram videos quickly and easily with a single click.
+            </p>
+          </div>
+          <img class="media" src="https://fastdl.app/images/text/card_index.webp" alt="Video Feature" />
+        </div>
+        <div class="card horizontal">
+          <img class="media" src="https://fastdl.app/images/text/card_index.webp" alt="Reels Feature" />
+          <div class="card-body">
+            <h3>Reels Downloader</h3>
+            <p>Save Instagram Reels for offline viewing anytime.</p>
+          </div>
+        </div>
+        <div class="card horizontal">
+          <div class="card-body">
+            <h3>Photo Downloader</h3>
+            <p>Download high-quality Instagram photos effortlessly.</p>
+          </div>
+          <img class="media" src="https://fastdl.app/images/text/card_index.webp" alt="Photo Feature" />
+        </div>
+        <div class="card horizontal">
+          <img class="media" src="https://fastdl.app/images/text/card_index.webp" alt="IGTV Feature" />
+          <div class="card-body">
+            <h3>IGTV Downloader</h3>
+            <p>Grab long-form IGTV videos with ease.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <h2 class="heading-style">Frequently Asked Questions (FAQ)</h2>
+          <p class="text-center">
+            This FAQ provides information on frequent questions or concerns about the InstaSnaps downloader.
+            If you can't find the answer to your question, feel free to ask through email on our contact page.
+          </p>
+
+          <h3 class="heading-style2">What is an Instagram Video Downloader?</h3>
+          <p>
+            It’s an online tool that lets you download Instagram videos, reels, photos, IGTV, and carousels.
+            InstaSnaps is the best tool for downloading from Instagram.
+          </p>
+
+          <h3 class="heading-style2">Is InstaSnaps free to use?</h3>
+          <p>Yes, InstaSnaps is completely free with no hidden costs.</p>
+
+          <h3 class="heading-style2">Can I download private posts?</h3>
+          <p>
+            No, InstaSnaps only works with public Instagram posts due to privacy restrictions.
+          </p>
+
+          <h3 class="heading-style2">What devices are supported?</h3>
+          <p>
+            InstaSnaps works on all devices, including mobile phones, tablets, and computers.
+          </p>
+        </div>
+      </div>
+
+      <footer class="footer"></footer>
+    </section>
+
+    <!-- Clipboard paste functionality -->
+    <script>
+      // Show download overlay when form is submitted
+      document.getElementById('download-form').addEventListener('submit', function() {
+        document.getElementById('download-overlay').style.display = 'block';
+      });
+
+      // Attempt to detect when the download response arrives using the hidden iframe
+      var iframe = document.getElementsByName("downloadFrame")[0];
+      iframe.onload = function() {
+        // In some cases, the iframe onload fires even on errors.
+        // We simulate completion after a short delay.
+        setTimeout(function(){
+          document.getElementById('download-message').textContent = 'Download complete!';
+          setTimeout(function(){
+            document.getElementById('download-overlay').style.display = 'none';
+            document.getElementById('download-message').textContent = 'Downloading...';
+          }, 1500);
+        }, 3000);
+      };
+
+      // Clipboard paste functionality for the URL input
+      document.querySelector('.paste').addEventListener('click', async () => {
+        try {
+          const text = await navigator.clipboard.readText();
+          document.getElementById('instagram-url').value = text;
+        } catch (err) {
+          alert('Failed to paste from clipboard');
+        }
+      });
+    </script>
+  </body>
+</html>
